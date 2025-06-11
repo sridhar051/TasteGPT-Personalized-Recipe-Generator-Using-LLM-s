@@ -1,12 +1,10 @@
 # TasteGPT: Personalized Recipe Generator using LLMs
 
-This repository contains a Jupyter notebook demonstrating how to build a personalized recipe generator powered by Large Language Models (LLMs). The notebook walks through setting up dependencies, connecting to various APIs, and evaluating generated recipes.
+This repository contains a Jupyter notebook demonstrating how to build a personalized recipe generator powered by Large Language Models (LLMs). The notebook walks through setting up dependencies, connecting to APIs, and evaluating generated recipes.
 
 ## Getting Started
 
 1. **Install dependencies**
-
-   Create a Python environment and install required packages:
 
    ```bash
    pip install -r requirements.txt
@@ -20,6 +18,18 @@ This repository contains a Jupyter notebook demonstrating how to build a persona
 
 - `LLM_Sridhar_Kandi.ipynb` – main notebook containing the code and explanations.
 - `requirements.txt` – list of Python packages needed to run the notebook.
+- `app.py` – optional Streamlit application for quick deployment.
+
+## Deployment
+
+You can deploy a simple web interface using **Streamlit**. First set your OpenAI API key and then launch the app:
+
+```bash
+export OPENAI_API_KEY="YOUR-KEY"
+streamlit run app.py
+```
+
+The app prompts you for ingredients or a dish name and generates a recipe using OpenAI's API.
 
 ## Notes
 
